@@ -1,0 +1,30 @@
+.button-container {
+    display: flex;
+    flex-direction: column; /* Располагаем кнопки вертикально */
+    gap: 10px; /* Отступ между кнопками */
+    margin: 20px 0;
+  }
+  
+  .btn {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Circe', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+    width: max-content; /* Устанавливаем ширину по содержимому самой широкой кнопки */
+    align-self: center; /* Выравниваем кнопки по центру */
+  }
+  
+  .btn:hover {
+    background-color: var(--nav-hover-color); /* Цвет кнопки при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
