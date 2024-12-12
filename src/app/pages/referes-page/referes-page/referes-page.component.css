@@ -1,0 +1,80 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Стили для секции админки */
+.admin-judges {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-judges h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стили для списка судей */
+.judges-list {
+    list-style: none;
+    padding: 0;
+}
+
+.judge-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.judge-item:last-child {
+    border-bottom: none;
+}
+
+.judge-name {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #e04343;
+}
+
+/* Стили для кнопки добавления судьи */
+.add-judge-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-judge-button:hover {
+    background-color: #218838;
+}
