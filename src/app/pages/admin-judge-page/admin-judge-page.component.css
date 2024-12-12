@@ -1,22 +1,26 @@
 /* Основные стили для страницы */
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
 }
 
 /* Стили для секции админки */
 .admin-judges {
-    width: 80%;
+    width: 100%;
     max-width: 800px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 2rem;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Заголовок секции */
 .admin-judges h2 {
     font-size: 2rem;
     color: #333;
@@ -27,25 +31,34 @@ body {
 .judges-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
+/* Элемент списка судей */
 .judge-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
 }
 
-.judge-item:last-child {
-    border-bottom: none;
+/* Эффект при наведении на элемент судьи */
+.judge-item:hover {
+    background-color: #e9ecef;
 }
 
+/* Имя судьи */
 .judge-name {
     font-size: 1.2rem;
     color: #333;
 }
 
+/* Кнопка удаления судьи */
 .delete-button {
     background-color: #ff4d4d;
     color: white;
@@ -68,7 +81,7 @@ body {
     padding: 12px 25px;
     font-size: 1.2rem;
     color: white;
-    background-color: #28a745;
+    background-color: #1c75bc;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -76,5 +89,5 @@ body {
 }
 
 .add-judge-button:hover {
-    background-color: #218838;
+    background-color: #155a8a;
 }
