@@ -15,7 +15,7 @@ export const routes: Routes = [
         {path: '', component: StartPageComponent},
         {path: 'login', component: LoginPageComponent},
         {path: 'request', component: RequestPageComponent},
-        {path: 'testing', component: PageTestingComponent},,
+        {path: 'admin-panel/testing', component: PageTestingComponent},
         {path: 'admin-panel', component: AdminPanelPageComponent},
         {path: 'admin-panel/judge', component: AdminJudgePageComponent},
         {path: 'admin-panel/test', component: PageTestingComponent},
