@@ -1,0 +1,68 @@
+
+<div class="textrequest">
+    <h1>Заявка на участие</h1>
+</div>
+
+<div class="request-form">
+    <form ng-submit="submitForm()">
+        <label for="city">Город:</label>
+        <input type="text" id="city" ng-model="formData.city" required>
+  
+        <label for="institution">Учебное учреждение:</label>
+        <input type="text" id="institution" ng-model="formData.institution" required>
+  
+        <label for="teamName">Название команды:</label>
+        <input type="text" id="teamName" ng-model="formData.teamName" required>
+  
+        <label for="robotName">Название робота:</label>
+        <input type="text" id="robotName" ng-model="formData.robotName" required>
+  
+        <label for="participants">Участники:</label>
+        <div ng-repeat="participant in formData.participants">
+          <input type="text" placeholder="Фамилия и имя участника" ng-model="participant.name" required>
+        </div>
+        <button type="button" ng-click="addParticipant()">Добавить участника</button>
+  
+        <label for="leaderName">ФИО руководителя:</label>
+        <input type="text" id="leaderName" ng-model="formData.leaderName" required>
+  
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" ng-model="formData.phone" required>
+  
+        <label for="email">Почта:</label>
+        <input type="email" id="email" ng-model="formData.email" required>
+  
+        <label for="comments">Комментарии:</label>
+        <textarea id="comments" ng-model="formData.comments"></textarea>
+  
+        <button type="submit">Отправить</button>
+      </form>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script>
+    angular.module('applicationFormApp', []).controller('FormController', function($scope) {
+      $scope.formData = {
+        city: '',
+        institution: '',
+        teamName: '',
+        robotName: '',
+        participants: [{ name: '' }],
+        leaderName: '',
+        phone: '',
+        email: '',
+        comments: ''
+      };
+
+      $scope.addParticipant = function() {
+        $scope.formData.participants.push({ name: '' });
+      };
+
+      $scope.submitForm = function() {
+        console.log('Form submitted:', $scope.formData);
+        alert('Форма успешно отправлена!');
+      };
+    });
+  </script>
+
+  
+</div>
