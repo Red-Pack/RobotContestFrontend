@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="request-form">
+        <div>
+            <h1>Информация о соревновании</h1>
+            <h3>asfsdfsd</h3>
+
+            <h1>Команды</h1>
+            <div class="team">
+                <h3 class="team-name">Команда 1: 31 очков</h3>
+                <div class="team-results">
+                    <p class="etap">Этап 1: 15 очков</p>
+                    <p>Критерий 1: 5</p>
+                    <p>Критерий 2: 5</p>
+                    <p>Критерий 3: 5</p>
+                    <p class="etap">Этап 2: 6 очков</p>
+                    <p>Критерий 1: 2</p>
+                    <p>Критерий 2: 2</p>
+                    <p>Критерий 3: 2</p>
+                    <p class="etap">Этап 3: 9 очков</p>
+                    <p>Критерий 1: 3</p>
+                    <p>Критерий 2: 3</p>
+                    <p>Критерий 3: 3</p>
+                </div>
+            </div>
+
+            <div class="team">
+                <h3 class="team-name">Команда 2: 24 очков</h3>
+                <div class="team-results">
+                    <p class="etap">Этап 1: 18 очков</p>
+                    <p>Критерий 1: 5</p>
+                    <p>Критерий 2: 5</p>
+                    <p>Критерий 3: 5</p>
+                    <p class="etap">Этап 2: 3 очков</p>
+                    <p>Критерий 1: 1</p>
+                    <p>Критерий 2: 1</p>
+                    <p>Критерий 3: 1</p>
+                    <p class="etap">Этап 3: 0 очков</p>
+                    <p>Критерий 1: 0</p>
+                    <p>Критерий 2: 0</p>
+                    <p>Критерий 3: 0</p>
+                </div>
+            </div>
+
+            <div class="team">
+                <h3 class="team-name">Команда3: 27 очков</h3>
+                <div class="team-results">
+                    <p class="etap">Этап 1: 6 очков</p>
+                    <p>Критерий 1: 1</p>
+                    <p>Критерий 2: 2</p>
+                    <p>Критерий 3: 3</p>
+                    <p class="etap">Этап 2: 6 очков</p>
+                    <p>Критерий 1: 2</p>
+                    <p>Критерий 2: 2</p>
+                    <p>Критерий 3: 2</p>
+                    <p class="etap">Этап 3: 15 очков</p>
+                    <p>Критерий 1: 5</p>
+                    <p>Критерий 2: 5</p>
+                    <p>Критерий 3: 5</p>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<script>
+    // Получаем все заголовки команд
+    const teamHeaders = document.querySelectorAll('.team-name');
+
+    // Для каждого заголовка команды добавляем обработчик клика
+    teamHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            // Находим следующий элемент (результаты команды)
+            const results = this.nextElementSibling;
+
+            // Переключаем видимость блока
+            if (results && results.classList.contains('team-results')) {
+                results.style.display = results.style.display === 'none' || results.style.display === '' ? 'block' : 'none';
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+  
