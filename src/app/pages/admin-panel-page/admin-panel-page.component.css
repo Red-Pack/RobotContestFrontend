@@ -17,6 +17,7 @@
     border-radius: 4px;
     width: max-content; /* Устанавливаем ширину по содержимому самой широкой кнопки */
     align-self: center; /* Выравниваем кнопки по центру */
+    text-decoration: none; /* подчеркивание по умолчанию */
   }
   
   .btn:hover {
