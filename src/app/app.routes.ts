@@ -4,13 +4,15 @@ import { AppComponent } from './app.component';
 import { StartPageComponent } from './pages/start-page/start-page.component';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
 import { RequestPageComponent } from './pages/request-page/request-page.component';
+import { PageTestingComponent } from './pages/testing-page/page-testing.component';
 
 export const routes: Routes = [
 
     {path: '', component: HeaderComponentComponent, children: [
         {path: '', component: StartPageComponent},
         {path: 'login', component: LoginPageComponent},
-        {path: 'request', component: RequestPageComponent}
+        {path: 'request', component: RequestPageComponent},
+        {path: 'testing', component: PageTestingComponent},
     ]},
 
     

@@ -1,0 +1,24 @@
+<p>page-testing works!</p>
+<body>
+    <div class="test-container">
+        <div class="test-header">
+            <h1>Список Испытаний</h1>
+            <button class="add-button" onclick="addTest()">Добавить</button>
+        </div>
+        <ul class="test-list" id="testList">
+            <li class="test-item">Испытание 1</li>
+            <li class="test-item">Испытание 2</li>
+            <li class="test-item">Испытание 3</li>
+        </ul>
+    </div>
+
+    <script>
+        function addTest() {
+            const testList = document.getElementById('testList');
+            const newTest = document.createElement('li');
+            newTest.className = 'test-item';
+            newTest.textContent = `Испытание ${testList.children.length + 1}`;
+            testList.appendChild(newTest);
+        }
+    </script>
+</body>
