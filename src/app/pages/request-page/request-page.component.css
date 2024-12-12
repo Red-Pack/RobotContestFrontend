@@ -1,17 +1,15 @@
-.textrequest {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
 
 body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
   }
+
+.form-container {
+
+}
 
   .request-form {
     background: white;
@@ -47,7 +45,7 @@ body {
   }
 
   button {
-    background-color: #007BFF;
+    background-color: var(--accent-color);
     color: white;
     border: none;
     cursor: pointer;
