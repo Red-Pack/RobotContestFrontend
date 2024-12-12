@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.robot-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #c2c2c2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.robot-section .text-content {
+    max-width: 50%;
+}
+
+.robot-section h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin: 0 0 20px;
+}
+
+.robot-section p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.robot-section .image-content img {
+    max-width: 40vw;
+    height: 50vh;
+}
+
+@media (max-width: 768px) {
+    .robot-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .robot-section .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .robot-section .image-content {
+        width: 100px;   /* Ширина изображения */
+        height: 100px;  /* Высота изображения */
+        
+    }
+}
+
+
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Стили для второй секции */
+.company-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-section .text-content {
+    max-width: 50%;
+    padding-left: 30px;
+}
+
+.company-section h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.company-section p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Для изображений */
+.company-section .image-content img {
+    max-width: 40vw;
+    height: 48vh;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+    .company-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company-section .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .company-section .image-content img {
+        max-width: 80%; /* Изображение будет уменьшаться */
+        height: auto;
+    }
+}
+
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Стили для третьей секции */
+.join-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #c2c2c2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.join-section .text-content {
+    max-width: 50%;
+    padding-right: 30px;
+}
+
+.join-section h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.join-section p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Кнопка регистрации */
+.cta-button {
+    background-color: var( --accent-color);  /* Цвет фона кнопок */
+    color: var(--surface-color);               /* Цвет текста на кнопках */
+    font-size: 18px;
+    padding: 8px 26px;         /* Отступы внутри кнопок */
+    border-radius: 50px;         /* Скругление углов */
+    text-decoration: none;      /* Убираем подчеркивание */
+    margin-left: 10px;          /* Отступ между кнопками */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Изображение робота */
+.join-section .image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+    .join-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .join-section .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .join-section .image-content img {
+        max-width: 80%; /* Уменьшаем изображение на мобильных */
+        height: auto;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 1.2rem;
+    }
+}
