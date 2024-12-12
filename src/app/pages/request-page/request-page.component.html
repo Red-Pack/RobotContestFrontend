@@ -1,0 +1,73 @@
+<div class="form-container">
+
+
+<div class="request-form">
+    <h1>Заявка на участие</h1>
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+      <label for="city">Город:</label>
+      <input id="city" formControlName="city">
+      <div *ngIf="formSubmitted && form.get('city')?.invalid" class="error">
+        Укажите город.
+      </div>
+    
+      <label for="institution">Учебное учреждение:</label>
+      <input id="institution" formControlName="institution">
+      <div *ngIf="formSubmitted && form.get('institution')?.invalid" class="error">
+        Укажите учебное учреждение.
+      </div>
+    
+      <label for="teamName">Название команды:</label>
+      <input id="teamName" formControlName="teamName">
+      <div *ngIf="formSubmitted && form.get('teamName')?.invalid" class="error">
+        Укажите название команды.
+      </div>
+    
+      <label for="robotName">Название робота:</label>
+      <input id="robotName" formControlName="robotName">
+      <div *ngIf="formSubmitted && form.get('robotName')?.invalid" class="error">
+        Укажите название робота.
+      </div>
+    
+      <label>Участники:</label>
+      <div formArrayName="participants">
+        <div *ngFor="let participant of participants.controls; let i = index" [formGroupName]="i">
+          <input type="text" placeholder="Фамилия и имя участника" formControlName="name">
+          <div *ngIf="formSubmitted && participant.get('name')?.invalid" class="error">
+            Укажите имя участника.
+          </div>
+          <button type="button" (click)="removeParticipant(i)">Удалить</button>
+        </div>
+      </div>
+      <button type="button" (click)="addParticipant()">Добавить участника</button>
+    
+      <label for="leaderName">ФИО руководителя:</label>
+      <input id="leaderName" formControlName="leaderName">
+      <div *ngIf="formSubmitted && form.get('leaderName')?.invalid" class="error">
+        Укажите ФИО руководителя.
+      </div>
+    
+      <label for="phone">Телефон:</label>
+      <input id="phone" formControlName="phone">
+      <div *ngIf="formSubmitted && form.get('phone')?.invalid" class="error">
+        Укажите корректный номер телефона.
+      </div>
+    
+      <label for="email">Почта:</label>
+      <input id="email" formControlName="email">
+      <div *ngIf="formSubmitted && form.get('email')?.invalid" class="error">
+        Укажите корректный email.
+      </div>
+    
+      <label for="comments">Комментарии:</label>
+      <textarea id="comments" formControlName="comments"></textarea>
+    
+      <div class="success" *ngIf="successMessage">{{ successMessage }}</div>
+    
+      <button type="submit">Отправить</button>
+    </form>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+
+  
+</div>
