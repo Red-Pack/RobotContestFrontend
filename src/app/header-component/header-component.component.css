@@ -1,4 +1,4 @@
-
+/* 
 
 .header-global{
     display: grid;
@@ -6,6 +6,65 @@
     gap: 20%;
     background-color: var(--main-blue-color);
     width: 100%;
-    height: 100px;
+    height: 125px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.logo img {
+    max-height: 85px;
+    margin-right: 8px;
+  }
+
+  .btn-getstarted,
+  .btn-getstarted:focus {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    font-size: 18px;
+    padding: 8px 26px;
+    margin: 0;
+    border-radius: 50px;
+    transition: 0.3s;
+  } */
+
+/* Общие стили для шапки */
+.header-global {
+    display: flex;              /* Используем flexbox */
+    justify-content: space-between; /* Распределяем элементы с максимальным расстоянием между ними */
+    align-items: center;        /* Выравниваем элементы по центру по вертикали */
+    padding: 10px 20px;         /* Отступы вокруг шапки */
+    background-color: var(--background-color);     /* Фон шапки */
+}
+
+/* Логотип */
+.logo-container {
+    display: flex;              /* Обеспечиваем гибкость для контейнера логотипа */
+    align-items: center;        /* Выравниваем по центру вертикально */
+}
+
+.img-logo {
+    height: 50px;               /* Ограничиваем высоту логотипа */
+    width: auto;                /* Автоматическая ширина, чтобы сохранить пропорции */
+}
+
+/* Стиль для кнопок */
+div > a.btn-getstarted {
+    background-color: var( --accent-color);  /* Цвет фона кнопок */
+    color: var(--surface-color);               /* Цвет текста на кнопках */
+    font-size: 18px;
+    padding: 8px 26px;         /* Отступы внутри кнопок */
+    border-radius: 50px;         /* Скругление углов */
+    text-decoration: none;      /* Убираем подчеркивание */
+    margin-left: 10px;          /* Отступ между кнопками */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+}
+
+/* Наведение на кнопки */
+div > a.btn-getstarted:hover {
+    background-color: #0056b3;  /* Цвет фона при наведении */
+}
+
+/* Кнопка, выравненная по правому краю */
+.btn-get-right {
+    margin-left: auto;          /* Отодвигает кнопку максимально вправо */
 }

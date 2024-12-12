@@ -1,0 +1,7 @@
+@font-face {
+   font-display: swap;
+   font-family: 'Circe';
+   font-style: normal;
+   font-weight: 100;
+   src: url('/assets/fonts/circe.woff2') format('woff2')
+}

@@ -1,11 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "fonts.css";
 
 :root {
-    --main-blue-color: #1c74bc;
-    --main-back-color: #646464;
-  }
+    --background-color: #ffffff;
+    --default-color: #212529;
+    --heading-color: #37373f;
+    --accent-color: #1c75bc; 
+    --surface-color: #ffffff; 
+    --contrast-color: #ffffff; 
+
+    font-family: 'Circe';
+}
+
+:root {
+  --nav-color: #7f7f90;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ce1212; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #7f7f90; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ce1212; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
 
 body{
     margin: auto;
-    background-color: var(--main-back-color);
+    color: var(--default-color);
+    background-color: var(--background-color);
 }
