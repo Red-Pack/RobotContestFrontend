@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class LoginPageComponent {
 
+  email: string = '';
+  password: string ='';
+
+
+  login(){
+    console.log('Email:', this.email)
+    console.log('Passord:', this.password)
+
+
+  }
+
+
 }
